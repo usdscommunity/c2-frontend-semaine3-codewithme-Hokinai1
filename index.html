@@ -2,60 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Mortgage repayment calculator</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mortgage Calculator</title>
 </head>
 <body>
+  <div class="container">
+    <section class="content-left">
+      <div class="header-left">
+        <h2>Mortgage Calculator</h2>
+      <button>Clear All</button>
+      </div>
 
-  Mortgage Calculator
-  Clear All
+      <section class="form-container">
+        <form action="#">
 
-  Mortgage Amount
+          <section class="input-container">
 
-  Mortgage Term
+          <label for="">Mortgage Amount</label>
 
-  Interest Rate
+          <div class="input-custom">
+            <section class="input-left">
+              <p class="indice">£</p>
+              </section>
+              <input type="number">
+          </div>
+          <p class="p-error">error error </p>
+          </section>
 
-  Mortgage Type
-  Repayment
-  Interest Only
+          <!-- Terme & Rate -->
 
-  Calculate Repayments
+          <div class="row"> 
+            <section class="input-container">
 
-  <!-- Empty results start -->
+          <label for="">Mortgage Term</label>
 
-  Results shown here
+          <div class="input-custom">
+            <input type="number">
+            <section class="input-right">
+              <p class="indice">years</p>
+              </section>
+              
+          </div>
+          <p class="p-error">error error </p>
+          </section>
 
-  Complete the form and click “calculate repayments” to see what 
-  your monthly repayments would be.
+          <section class="input-container">
 
-  <!-- Empty results end -->
+          <label for="">Interest Rate</label>
 
-  <!-- Completed results start -->
+          <div class="input-custom">
+            <input type="number">
+            <section class="input-right">
+              <p class="indice">%</p>
+              </section>
+              
+          </div>
+          <p class="p-error">error error </p>
+          </section>
+          </div>
 
-  Your results
+          <!-- radio types -->
+          
+          
 
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
+          <label for="">Mortgage Type</label>
+         <div class="radio-container">
+            <section class="input-container-radio">
 
-  Your monthly repayments
 
-  Total you'll repay over the term
+          <div class="input-custom-radio">
+            <section class="input-left-radio">
+              <input type="radio" class="radio">
+              </section>
+              <p class="opt-libelle">Repayement</p>
+          </div>
+          <p class="p-error">error error </p>
+          </section>
 
-  <!-- Completed results end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <label for="">Mortgage Type</label>
+
+           <div class="radio-container">
+            <section class="input-container-radio">
+
+
+          <div class="input-custom-radio">
+            <section class="input-left-radio">
+              <input type="radio" class="radio" name="type" id="type">
+              </section>
+              <p class="opt-libelle">Interest Only</p>
+          </div>
+          <p class="p-error">error error </p>
+          </section>
+
+         </div>
+
+
+         <button class="button_submit">
+          <img src="./assets/images/icon-calculator.svg" alt="">
+          <span>Calculate Repayements</span>
+         </button>
+
+        </form>
+      </section>
+
+
+
+    </section>
+
+
+    <section class="content-right">
+
+      <div class="right-content">
+        <img src="./assets/images/illustration-empty.svg" alt="">
+
+        <div class="results">
+           <h2>Results Shown here</h2>
+
+        <p>Complete the form and click calculate repayments' to
+see what your monthly repayments would be ,</p>
+        </div>
+
+       
+
+      </div>
+      
+    </section>
+    
   </div>
 </body>
 </html>
